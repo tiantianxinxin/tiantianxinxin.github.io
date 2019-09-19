@@ -85,17 +85,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>要将某个代码合并到指定分支上，就需要用到<br>git cherry-pick commitID</p>
-<p>例如使用场景：dev_OAuth是从dev_test checkout出来的，现在需要将<br>dev_OAuth修改的记录合并到dev-goal上并提交。以下步骤：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TestDemo git:(dev_OAuth) git checkout dev-goal</span><br><span class="line">TestDemo-ios git:(dev-goal) git pull --rebase</span><br></pre></td></tr></table></figure>
+<p>1、例如使用场景：dev_OAuth是从dev_test checkout出来的，现在需要将<br>dev_OAuth修改的记录合并到dev-goal上并提交。以下步骤：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TestDemo git:(dev_OAuth) git checkout dev-goal</span><br><span class="line">TestDemo-ios git:(dev-goal) git pull --rebase</span><br></pre></td></tr></table></figure>
 
 <p>2、查看dev_OAuth分支上的提交记录，找到需要合并的commitId,然后进行合并，然后进行push</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">➜  TestDemo-ios git:(dev-goal) git log dev_OAuth</span><br><span class="line">➜  TestDemo-ios git:(dev-goal) git cherry-pick b6174e38ec3ca63b877c9d8db84999a4b8b3ac47</span><br><span class="line">[dev-goal fe4e2bc9a] commit log info test1</span><br><span class="line">➜  TestDemo git:(dev-goal) git cherry-pick f5b61783b6aa37f5c4de96708b9c3fc430192050</span><br><span class="line">commit log info test2</span><br><span class="line">➜  TestDemo git:(dev-goal)  git push</span><br></pre></td></tr></table></figure>
-
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">➜  TestDemo-ios git:(dev-goal) git <span class="built_in">log</span> dev_OAuth</span><br><span class="line">➜  TestDemo-ios git:(dev-goal) git cherry-pick b6174e38ec3ca63b877c9d8db84999a4b8b3ac47</span><br><span class="line">[dev-goal fe4e2bc9a] commit <span class="built_in">log</span> info test1</span><br><span class="line">➜  TestDemo git:(dev-goal) git cherry-pick f5b61783b6aa37f5c4de96708b9c3fc430192050</span><br><span class="line">commit <span class="built_in">log</span> info test2</span><br><span class="line">➜  TestDemo git:(dev-goal)  git push</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/19/commit合并到指定分支/" data-id="ck0qh0yoy000017q2ojvll256" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/19/commit合并到指定分支/" data-id="ck0qhk84s0000e7q2vmgq9y2m" class="article-share-link">Share</a>
       
       
     </footer>
@@ -144,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/19/hello-world/" data-id="ck0qh0yp3000117q2pre7youb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/19/hello-world/" data-id="ck0qhk84x0001e7q2qns1w4l3" class="article-share-link">Share</a>
       
       
     </footer>
