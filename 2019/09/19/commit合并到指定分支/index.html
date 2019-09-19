@@ -1,194 +1,334 @@
-<!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  
 
+ <!DOCTYPE HTML>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
   
-  <title>commit合并到指定分支 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="要将某个代码合并到指定分支上，就需要用到git cherry-pick commitID 1、例如使用场景：dev_OAuth是从dev_test checkout出来的，现在需要将dev_OAuth修改的记录合并到dev-goal上并提交。以下步骤： 12TestDemo git:(dev_OAuth) git checkout dev-goalTestDemo-ios git:(dev-goa">
+    <title>commit合并到指定分支 | tian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="tian">
+    
+
+    
+    <meta name="description" content="要将某个代码合并到指定分支上，就需要用到git cherry-pick commitID 1、例如使用场景：dev_OAuth是从dev_test checkout出来的，现在需要将dev_OAuth修改的记录合并到dev-goal上并提交。以下步骤： 12TestDemo git:(dev_OAuth) git checkout dev-goalTestDemo-ios git:(dev-goa">
 <meta property="og:type" content="article">
 <meta property="og:title" content="commit合并到指定分支">
 <meta property="og:url" content="http://yoursite.com/2019/09/19/commit合并到指定分支/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="tian">
 <meta property="og:description" content="要将某个代码合并到指定分支上，就需要用到git cherry-pick commitID 1、例如使用场景：dev_OAuth是从dev_test checkout出来的，现在需要将dev_OAuth修改的记录合并到dev-goal上并提交。以下步骤： 12TestDemo git:(dev_OAuth) git checkout dev-goalTestDemo-ios git:(dev-goa">
 <meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2019-09-19T09:26:15.589Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="commit合并到指定分支">
 <meta name="twitter:description" content="要将某个代码合并到指定分支上，就需要用到git cherry-pick commitID 1、例如使用场景：dev_OAuth是从dev_test checkout出来的，现在需要将dev_OAuth修改的记录合并到dev-goal上并提交。以下步骤： 12TestDemo git:(dev_OAuth) git checkout dev-goalTestDemo-ios git:(dev-goa">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+    
+    <link rel="alternative" href="/atom.xml" title="tian" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.png">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 </html>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+  <body>
+    <header>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
+<div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="tian">tian</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="git" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2019/09/19/commit合并到指定分支/" title="commit合并到指定分支" itemprop="url">commit合并到指定分支</a>
+  </h1>
+  
+  <p class="article-time">
+    <time datetime="2019-09-19T08:42:12.000Z" itemprop="datePublished"> Published 2019-09-19</time>
+    
+  </p>
 </header>
-      <div class="outer">
-        <section id="main"><article id="git-commit合并到指定分支" class="article article-type-git" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/09/19/commit合并到指定分支/" class="article-date">
-  <time datetime="2019-09-19T08:42:12.000Z" itemprop="datePublished">2019-09-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      commit合并到指定分支
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>要将某个代码合并到指定分支上，就需要用到<br>git cherry-pick commitID</p>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>要将某个代码合并到指定分支上，就需要用到<br>git cherry-pick commitID</p>
 <p>1、例如使用场景：dev_OAuth是从dev_test checkout出来的，现在需要将<br>dev_OAuth修改的记录合并到dev-goal上并提交。以下步骤：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">TestDemo git:(dev_OAuth) git checkout dev-goal</span><br><span class="line">TestDemo-ios git:(dev-goal) git pull --rebase</span><br></pre></td></tr></table></figure>
 
 <p>2、查看dev_OAuth分支上的提交记录，找到需要合并的commitId,然后进行合并，然后进行push</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">➜  TestDemo-ios git:(dev-goal) git <span class="built_in">log</span> dev_OAuth</span><br><span class="line">➜  TestDemo-ios git:(dev-goal) git cherry-pick b6174e38ec3ca63b877c9d8db84999a4b8b3ac47</span><br><span class="line">[dev-goal fe4e2bc9a] commit <span class="built_in">log</span> info test1</span><br><span class="line">➜  TestDemo git:(dev-goal) git cherry-pick f5b61783b6aa37f5c4de96708b9c3fc430192050</span><br><span class="line">commit <span class="built_in">log</span> info test2</span><br><span class="line">➜  TestDemo git:(dev-goal)  git push</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/19/commit合并到指定分支/" data-id="ck0qhk84s0000e7q2vmgq9y2m" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2019/09/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li></ul>
-    </div>
-  </div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">➜  TestDemo-ios git:(dev-goal) git <span class="built_in">log</span> dev_OAuth</span><br><span class="line">➜  TestDemo-ios git:(dev-goal) git cherry-pick b6174e38ec3ca63b877c9d8db84999a4b8b3ac47</span><br><span class="line">[dev-goal fe4e2bc9a] commit <span class="built_in">log</span> info test1</span><br><span class="line">➜  TestDemo git:(dev-goal) git cherry-pick f5b61783b6aa37f5c4de96708b9c3fc430192050</span><br><span class="line">commit <span class="built_in">log</span> info test2</span><br><span class="line">➜  TestDemo git:(dev-goal)  git push</span><br></pre></td></tr></table></figure>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/09/19/commit合并到指定分支/">commit合并到指定分支</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/19/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+</div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2019/09/19/commit合并到指定分支/" data-title="commit合并到指定分支 | tian" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2019/09/19/hello-world/"  title="Hello World">
+ <strong>下一篇：</strong><br/> 
+ <span>Hello World
+</span>
+</a>
+</div>
+
 </nav>
-    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2019/09/19/commit合并到指定分支/" data-title="commit合并到指定分支" data-url="http://yoursite.com/2019/09/19/commit合并到指定分支/"></div>
+</section>
 
 
-<script src="/js/script.js"></script>
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://objccn.io" target="_blank" title="objcn">objcn</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://nshipster.cn" target="_blank" title="NSHipster">NSHipster</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://swift.gg/" target="_blank" title="SwiftGG">SwiftGG</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright" style="margin-top: 10px;">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
+		
+		<a href="/about" target="_blank" title="tian">tian</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
 
 
 
-  </div>
-</body>
-</html>
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"alexander"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+ </html>
